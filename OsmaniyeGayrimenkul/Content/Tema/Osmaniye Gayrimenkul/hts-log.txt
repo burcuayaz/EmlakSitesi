@@ -1,0 +1,164 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 21 Dec 2020 13:19:26 at https://myhometheme.net/agent/ http://myhometheme.net/agent/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "tr, en, *" https://myhometheme.net/agent/ http://myhometheme.net/agent/ -O1 "C:\Users\Hp\Desktop\Osmaniye Gayrimenkul" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:20:10	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://myhometheme.net/agent/)
+13:20:10	Error: 	"Method Not Allowed" (405) at link https://myhometheme.net/agent/xmlrpc.php (from https://myhometheme.net/agent/)
+13:20:42	Warning: 	Moved Permanently for https://myhometheme.net/agent/image-parallax/
+13:20:42	Warning: 	File has moved from https://myhometheme.net/agent/image-parallax/ to https://myhometheme.net/investments/
+13:20:47	Warning: 	Moved Permanently for https://myhometheme.net/agent/directory/
+13:20:47	Warning: 	File has moved from https://myhometheme.net/agent/directory/ to https://myhometheme.net/directory/
+13:21:13	Warning: 	Moved Permanently for https://myhometheme.net/agent/pricing-table/
+13:21:13	Warning: 	File has moved from https://myhometheme.net/agent/pricing-table/ to https://myhometheme.net/test-user/pricing-table/
+13:23:04	Warning: 	File not parsed, looks like binary: https://myhometheme.net/agent/wp-content/plugins/revslider/public/assets/css/openhand.cur
+13:23:04	Warning: 	File not parsed, looks like binary: https://myhometheme.net/agent/wp-content/plugins/revslider/public/assets/css/closedhand.cur
+13:23:05	Error: 	"Forbidden" (403) at link https://myhometheme.net/agent/wp-content/themes/myhome/.assets/fonts/Flaticon.ttf (from https://myhometheme.net/agent/wp-content/cache/minify/84ed0.css)
+13:23:05	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=5
+13:23:05	Warning: 	File has moved from https://myhometheme.net/agent/?p=5 to https://myhometheme.net/agent
+13:23:46	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=230
+13:23:46	Warning: 	File has moved from https://myhometheme.net/agent/?p=230 to https://myhometheme.net/agent
+13:23:54	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=355
+13:23:54	Warning: 	File has moved from https://myhometheme.net/agent/?p=355 to https://myhometheme.net/agent
+13:23:54	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=1870
+13:23:54	Warning: 	File has moved from https://myhometheme.net/agent/?p=1870 to https://myhometheme.net/agent
+13:23:59	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=588
+13:23:59	Warning: 	File has moved from https://myhometheme.net/agent/?p=588 to https://myhometheme.net/agent
+13:23:59	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=2455
+13:23:59	Warning: 	File has moved from https://myhometheme.net/agent/?p=2455 to https://myhometheme.net/agent
+13:23:59	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=1957
+13:23:59	Warning: 	File has moved from https://myhometheme.net/agent/?p=1957 to https://myhometheme.net/agent
+13:23:59	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=139
+13:23:59	Warning: 	File has moved from https://myhometheme.net/agent/?p=139 to https://myhometheme.net/agent
+13:23:59	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=439
+13:23:59	Warning: 	File has moved from https://myhometheme.net/agent/?p=439 to https://myhometheme.net/agent
+13:23:59	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=404
+13:23:59	Warning: 	File has moved from https://myhometheme.net/agent/?p=404 to https://myhometheme.net/agent
+13:23:59	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=1944
+13:23:59	Warning: 	File has moved from https://myhometheme.net/agent/?p=1944 to https://myhometheme.net/agent
+13:24:06	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=2199
+13:24:06	Warning: 	File has moved from https://myhometheme.net/agent/?p=2199 to https://myhometheme.net/agent
+13:24:06	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=2450
+13:24:06	Warning: 	File has moved from https://myhometheme.net/agent/?p=2450 to https://myhometheme.net/agent
+13:24:06	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=1836
+13:24:06	Warning: 	File has moved from https://myhometheme.net/agent/?p=1836 to https://myhometheme.net/agent
+13:24:26	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=1961
+13:24:26	Warning: 	File has moved from https://myhometheme.net/agent/?p=1961 to https://myhometheme.net/agent
+13:24:26	Error: 	"Unauthorized" (401) at link https://myhometheme.net/agent/wp-json/wp/v2/users/11 (from https://myhometheme.net/agent/agency/myhome-agency/)
+13:24:28	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=3141
+13:24:28	Warning: 	File has moved from https://myhometheme.net/agent/?p=3141 to https://myhometheme.net/agent
+13:24:28	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=1719
+13:24:28	Warning: 	File has moved from https://myhometheme.net/agent/?p=1719 to https://myhometheme.net/agent
+13:24:28	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=1674
+13:24:28	Warning: 	File has moved from https://myhometheme.net/agent/?p=1674 to https://myhometheme.net/agent
+13:24:28	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=2551
+13:24:28	Warning: 	File has moved from https://myhometheme.net/agent/?p=2551 to https://myhometheme.net/agent
+13:24:28	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=2732
+13:24:28	Warning: 	File has moved from https://myhometheme.net/agent/?p=2732 to https://myhometheme.net/agent
+13:24:28	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=2560
+13:24:28	Warning: 	File has moved from https://myhometheme.net/agent/?p=2560 to https://myhometheme.net/agent
+13:24:28	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=2323
+13:24:28	Warning: 	File has moved from https://myhometheme.net/agent/?p=2323 to https://myhometheme.net/agent
+13:24:30	Warning: 	Found for https://service.weibo.com/robots.txt
+13:24:30	Warning: 	File has moved from https://service.weibo.com/robots.txt to http://service.t.sina.com.cn/robots.txt
+13:24:40	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=1365
+13:24:40	Warning: 	File has moved from https://myhometheme.net/agent/?p=1365 to https://myhometheme.net/agent
+13:24:40	Error: 	"Not Found" (404) at link localhost/newhome/wp-content/uploads/2017/02/superior-office-space-300x200.jpg (from https://myhometheme.net/agent/typography/)
+13:24:40	Error: 	"Not Found" (404) at link localhost/newhome/wp-content/uploads/2017/02/international-towers-300x200.jpg (from https://myhometheme.net/agent/typography/)
+13:24:40	Error: 	"Not Found" (404) at link localhost/newhome/wp-content/uploads/2017/01/seattle.jpg (from https://myhometheme.net/agent/typography/)
+13:24:49	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=113
+13:24:49	Warning: 	File has moved from https://myhometheme.net/agent/?p=113 to https://myhometheme.net/agent
+13:24:56	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=818
+13:24:56	Warning: 	File has moved from https://myhometheme.net/agent/?p=818 to https://myhometheme.net/agent
+13:25:18	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=128
+13:25:18	Warning: 	File has moved from https://myhometheme.net/agent/?p=128 to https://myhometheme.net/agent
+13:25:41	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=126
+13:25:41	Warning: 	File has moved from https://myhometheme.net/agent/?p=126 to https://myhometheme.net/agent
+13:25:43	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=123
+13:25:43	Warning: 	File has moved from https://myhometheme.net/agent/?p=123 to https://myhometheme.net/agent
+13:25:44	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=118
+13:25:44	Warning: 	File has moved from https://myhometheme.net/agent/?p=118 to https://myhometheme.net/agent
+13:25:45	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=125
+13:25:45	Warning: 	File has moved from https://myhometheme.net/agent/?p=125 to https://myhometheme.net/agent
+13:25:46	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=102
+13:25:46	Warning: 	File has moved from https://myhometheme.net/agent/?p=102 to https://myhometheme.net/agent
+13:25:47	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=814
+13:25:47	Warning: 	File has moved from https://myhometheme.net/agent/?p=814 to https://myhometheme.net/agent
+13:25:47	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=121
+13:25:47	Warning: 	File has moved from https://myhometheme.net/agent/?p=121 to https://myhometheme.net/agent
+13:25:49	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=115
+13:25:49	Warning: 	File has moved from https://myhometheme.net/agent/?p=115 to https://myhometheme.net/agent
+13:25:49	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=812
+13:25:49	Warning: 	File has moved from https://myhometheme.net/agent/?p=812 to https://myhometheme.net/agent
+13:26:04	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=94
+13:26:04	Warning: 	File has moved from https://myhometheme.net/agent/?p=94 to https://myhometheme.net/agent
+13:26:05	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=129
+13:26:05	Warning: 	File has moved from https://myhometheme.net/agent/?p=129 to https://myhometheme.net/agent
+13:26:05	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=72
+13:26:05	Warning: 	File has moved from https://myhometheme.net/agent/?p=72 to https://myhometheme.net/agent
+13:26:05	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=92
+13:26:05	Warning: 	File has moved from https://myhometheme.net/agent/?p=92 to https://myhometheme.net/agent
+13:26:06	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=827
+13:26:06	Warning: 	File has moved from https://myhometheme.net/agent/?p=827 to https://myhometheme.net/agent/the-most-inspiring-interior-design-of-2016/
+13:26:10	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=825
+13:26:10	Warning: 	File has moved from https://myhometheme.net/agent/?p=825 to https://myhometheme.net/agent/7-instagram-accounts-for-interior-design-enthusiasts/
+13:26:10	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=225
+13:26:10	Warning: 	File has moved from https://myhometheme.net/agent/?p=225 to https://myhometheme.net/agent/renovating-a-living-room-experts-share-their-secrets/
+13:26:10	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=223
+13:26:10	Warning: 	File has moved from https://myhometheme.net/agent/?p=223 to https://myhometheme.net/agent/recent-commercial-real-estate-transactions/
+13:26:10	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=215
+13:26:10	Warning: 	File has moved from https://myhometheme.net/agent/?p=215 to https://myhometheme.net/agent/new-home-design-books/
+13:26:10	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=805
+13:26:10	Warning: 	File has moved from https://myhometheme.net/agent/?p=805 to https://myhometheme.net/agent
+13:26:12	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=817
+13:26:12	Warning: 	File has moved from https://myhometheme.net/agent/?p=817 to https://myhometheme.net/agent
+13:26:14	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=924
+13:26:14	Warning: 	File has moved from https://myhometheme.net/agent/?p=924 to https://myhometheme.net/agent
+13:26:17	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=203
+13:26:17	Warning: 	File has moved from https://myhometheme.net/agent/?p=203 to https://myhometheme.net/agent/10-brilliant-ways-to-decorate-your-home/
+13:26:17	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=220
+13:26:17	Warning: 	File has moved from https://myhometheme.net/agent/?p=220 to https://myhometheme.net/agent/the-interior-design-trends/
+13:26:17	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=213
+13:26:17	Warning: 	File has moved from https://myhometheme.net/agent/?p=213 to https://myhometheme.net/agent/10-of-the-best-home-bloggers-to-follow-on-instagram/
+13:26:17	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=209
+13:26:17	Warning: 	File has moved from https://myhometheme.net/agent/?p=209 to https://myhometheme.net/agent/3-ways-office-design-affects-work-productivity/
+13:26:17	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=207
+13:26:17	Warning: 	File has moved from https://myhometheme.net/agent/?p=207 to https://myhometheme.net/agent/6-free-sources-for-home-design-inspiration/
+13:26:35	Error: 	"Not Found" (404) at link https://service.weibo.com/share/index=0&src=https%3A%2F%2Fmyhometheme.net%2Fagent%2Fwp-content%2Fuploads%2F2017%2F02%2Fbeautiful-executive-suites.jpg (from https://service.weibo.com/share/share.php?url=https://myhometheme.net/agent/social-share-buttons/&title=Social+Share+Buttons+%28option+example%29&pic=https://myhometheme.net/agent/wp-content/uploads/2017/02/beautiful-executive-suites.jpg)
+13:26:43	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=124
+13:26:43	Warning: 	File has moved from https://myhometheme.net/agent/?p=124 to https://myhometheme.net/agent
+13:26:44	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=578
+13:26:44	Warning: 	File has moved from https://myhometheme.net/agent/?p=578 to https://myhometheme.net/agent
+13:26:44	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=816
+13:26:44	Warning: 	File has moved from https://myhometheme.net/agent/?p=816 to https://myhometheme.net/agent
+13:26:46	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=575
+13:26:46	Warning: 	File has moved from https://myhometheme.net/agent/?p=575 to https://myhometheme.net/agent
+13:26:47	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=815
+13:26:47	Warning: 	File has moved from https://myhometheme.net/agent/?p=815 to https://myhometheme.net/agent
+13:26:49	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=122
+13:26:49	Warning: 	File has moved from https://myhometheme.net/agent/?p=122 to https://myhometheme.net/agent
+13:26:52	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=120
+13:26:52	Warning: 	File has moved from https://myhometheme.net/agent/?p=120 to https://myhometheme.net/agent
+13:26:52	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=119
+13:26:52	Warning: 	File has moved from https://myhometheme.net/agent/?p=119 to https://myhometheme.net/agent
+13:26:52	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=218
+13:26:52	Warning: 	File has moved from https://myhometheme.net/agent/?p=218 to https://myhometheme.net/agent/how-to-buy-commercial-real-estate/
+13:26:52	Warning: 	Moved Permanently for https://myhometheme.net/agent/?p=211
+13:26:52	Warning: 	File has moved from https://myhometheme.net/agent/?p=211 to https://myhometheme.net/agent/new-approaches-to-the-future-of-design/
+13:26:56	Warning: 	Moved Permanently for https://myhometheme.net/agent/panel/Version/
+13:26:56	Warning: 	File has moved from https://myhometheme.net/agent/panel/Version/ to https://myhometheme.net/agent
+13:26:56	Warning: 	Moved Permanently for https://myhometheme.net/agent/panel/version/
+13:26:56	Warning: 	File has moved from https://myhometheme.net/agent/panel/version/ to https://myhometheme.net/agent
+13:26:56	Warning: 	Moved Permanently for https://myhometheme.net/agent/panel/edge/
+13:26:56	Warning: 	File has moved from https://myhometheme.net/agent/panel/edge/ to https://myhometheme.net/agent
+13:26:56	Warning: 	Moved Permanently for https://myhometheme.net/agent/panel/mh/
+13:26:56	Warning: 	File has moved from https://myhometheme.net/agent/panel/mh/ to https://myhometheme.net/agent
+13:26:59	Warning: 	Retry after error -5 (Unable to get server's address: Bilinen böyle bir ana bilgisayar yok. ) at link s1.sinaedge.com/whb.gif?t= (from tjs.sjs.sinajs.cn/t5/register/js/page/remote/loginLayer.js?_v=)
+13:27:01	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link s1.sinaedge.com/whb.gif?t= (from tjs.sjs.sinajs.cn/t5/register/js/page/remote/loginLayer.js?_v=)
+13:27:03	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link s1.sinaedge.com/whb.gif?t= (from tjs.sjs.sinajs.cn/t5/register/js/page/remote/loginLayer.js?_v=)
+
+HTTrack Website Copier/3.49-2 mirror complete in 7 minutes 40 seconds : 866 links scanned, 784 files written (66076122 bytes overall) [26622831 bytes received at 57875 bytes/sec], 47963649 bytes transferred using HTTP compression in 582 files, ratio 15%, 8.6 requests per connection
+(9 errors, 144 warnings, 0 messages)

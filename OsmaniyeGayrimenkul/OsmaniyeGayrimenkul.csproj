@@ -1,0 +1,1105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEBE4181-1244-447B-AA3B-9590AFA738C9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OsmaniyeGayrimenkul</RootNamespace>
+    <AssemblyName>OsmaniyeGayrimenkul</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44331</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\ajax.cloudflare.com\cdn-cgi\scripts\7089c43e\cloudflare-static\rocket-loader.min.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\backblue.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\connect.facebook.net\en_us\sdk.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\cookies.txt" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\fade.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\hts-cache\new.lst" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\hts-cache\new.txt" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\hts-cache\readme.txt" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\hts-log.txt" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\images\logo.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\images\logo2.jpeg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\images\logooo.jpeg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\images\Screenshot_1.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\images\WhatsApp Image 2020-12-21 at 15.30.25.jpeg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\images\WhatsApp Image 2020-12-21 at 15.31.03.jpeg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\images\WhatsApp Image 2020-12-21 at 15.31.06 %281%29.jpeg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\css\share\shareae1f.css" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\bg_sharebox26d4.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\bg_sharebox26d4.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\icon_tips26d4.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\icon_tips26d4.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\icon_tools26d4.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\loading126d4.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\loading226d4.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\loading426d4.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\state_fail26d4.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\state_fail26d4.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\wb_logo16_a26d4.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\wb_logo83a5.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\wb_logo83a5.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\wb_xline_s126d4.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\wb_xline_s126d4.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\library\base\wb_xline_s226d4.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\img.t.sinajs.cn\t4\appstyle\widget\images\share\wemeet_icon.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\js.t.sinajs.cn\open\widget\js\share\shareae1f.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\js.t.sinajs.cn\STK\js\gaea_1_19.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\localhost\newhome\wp-content\uploads\2017\01\seattle.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\localhost\newhome\wp-content\uploads\2017\02\international-towers-300x200.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\localhost\newhome\wp-content\uploads\2017\02\superior-office-space-300x200.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\10-brilliant-ways-to-decorate-your-home\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\10-brilliant-ways-to-decorate-your-home\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\10-of-the-best-home-bloggers-to-follow-on-instagram\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\10-of-the-best-home-bloggers-to-follow-on-instagram\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\2017\07\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\2017\08\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\2017\09\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\2017\10\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\3-ways-office-design-affects-work-productivity\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\3-ways-office-design-affects-work-productivity\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\6-free-sources-for-home-design-inspiration\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\6-free-sources-for-home-design-inspiration\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\7-instagram-accounts-for-interior-design-enthusiasts\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\7-instagram-accounts-for-interior-design-enthusiasts\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\about-me\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\about-us\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\advanced-search-form\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agency\myhome-agency\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agency\myhome-agency\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\adam-jarod\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\adam-jarod\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\daniella-suzanne\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\daniella-suzanne\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\erle-orval\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\erle-orval\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\peter-hendricks\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\peter-hendricks\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\truman-kennith\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\agent\truman-kennith\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\blog\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\blog\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\category\home-design\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\category\home-design\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\category\home-design\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city-neighborhood-street\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\chicago\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\chicago\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\chicago\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\los-angeles\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\los-angeles\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\los-angeles\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\new-york\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\new-york\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\new-york\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\new-york\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\new-york\page\4\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\seattle\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\seattle\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\city\seattle\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\comments\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\contact\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\directory\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\featured\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\air-conditioning\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\air-conditioning\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\air-conditioning\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\air-conditioning\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\air-conditioning\page\4\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\ceiling-fan\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\ceiling-fan\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\ceiling-fan\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\ceiling-fan\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\dishwasher\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\dishwasher\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\dishwasher\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\dishwasher\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\fireplace\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\fireplace\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\fireplace\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\fireplace\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\high-ceilings\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\high-ceilings\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\high-ceilings\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\high-ceilings\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\microwave\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\microwave\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\microwave\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\microwave\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\patio\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\patio\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\patio\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\patio\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\porch\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\porch\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\porch\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\porch\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\refrigerator\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\refrigerator\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\refrigerator\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\refrigerator\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\wifi\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\wifi\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\wifi\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\features\wifi\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\home-valuation\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\how-to-buy-commercial-real-estate\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\how-to-buy-commercial-real-estate\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\image-parallax\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\image-property-listings\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index0114.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index028e.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index0a10.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index156c.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index1c00.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index1fba.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index20ad.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index2c90.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index3961.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index3a58.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index3eda.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index4730.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index4ab3.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index4c94.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index4e02.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index4e6a.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index5034.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index5070.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index5a52.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index65d2.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index6cd8.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index73a5.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index7737.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index8042.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index8e15.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index913e.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index9a2e.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\index9fa1.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexa379.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexa722.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexaa3c.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexae74.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexafe6.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexb4d2.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexb858.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexb8c4.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexc39e.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexc471.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexc535.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexc5eb.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexc6a5.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexc9bf.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexd027.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexd4a6.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexd7c9.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexd8bc.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexdb4e.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexdb84.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexdf2c.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexe398.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexe5c7.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexe856.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexe8f9.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexeb91.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexeba0.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexede1.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexee96.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexefa2.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexefbe.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexf3dd.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexfa80.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\indexfcc0.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\map-list-integrated\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\map-multiple-cities\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\map-no-search-form\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\map-search-form\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\austin\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\austin\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\capitol-hill\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\capitol-hill\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\chinatown\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\chinatown\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\chinatown\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\downtown\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\downtown\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\englewood\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\englewood\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\fremont\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\fremont\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\lake-city\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\lake-city\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\skid-row\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\skid-row\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\soho\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\soho\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\soho\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\upper-east-side\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\upper-east-side\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\upper-east-side\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\venice\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\venice\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\wicker-park\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\neighborhood\wicker-park\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\new-approaches-to-the-future-of-design\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\new-approaches-to-the-future-of-design\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\new-home-design-books\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\new-home-design-books\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\hot-offer\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\hot-offer\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\no-fees\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\no-fees\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\no-fees\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\open-house\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\open-house\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\rent\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\rent\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\rent\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\rent\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\rent\page\4\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\rent\page\5\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\sale\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\sale\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\sale\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\sale\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\sale\page\4\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\sale\page\5\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\sold\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\offer-type\sold\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\our-team\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\panel\edge\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\panel\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\panel\mh\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\panel\Version\index-2.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\panel\Version\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\predefined-search-form-fields\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\pricing-table\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\chicago\flat-in-the-tenement-house\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\chicago\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\chicago\modern-and-sunny-apartment\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\chicago\modern-apartment-in-the-city-center\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\los-angeles\bright-apartment\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\los-angeles\centrally-located-apartment\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\los-angeles\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\new-york\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\new-york\minimalist-and-bright-flat\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\new-york\scandinavian-style-apartment\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\new-york\simple-small-apartment\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\new-york\two-storey-modern-flat\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\apartment\seattle\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\chicago\elegant-studio-flat\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\chicago\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\chicago\modern-house-with-the-great-view\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\chicago\place-perfect-for-nature-lovers\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\los-angeles\house-in-a-quiet-neighborhood\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\los-angeles\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\new-york\charmin-countryside-estate\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\new-york\colonial-style-villa\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\new-york\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\new-york\summer-house-with-a-pole\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\seattle\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\house\seattle\modern-and-quirky-house\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\index7649.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\indexd1bd.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\chicago\affordable-office-space\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\chicago\great-small-office\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\chicago\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\los-angeles\beautiful-co-working-space\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\los-angeles\full-floor-office-condo\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\los-angeles\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\new-york\beautiful-executive-suites\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\new-york\huge-office-space\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\new-york\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\new-york\tastefully-decorarated-spacious-office\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\seattle\furnished-co-working-space\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\seattle\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\office\seattle\medical-office-condo\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\page\4\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\page\5\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\page\6\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\page\7\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\page\8\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\properties\page\9\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-slider-v2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-slider-v3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-slider\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\apartment\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\apartment\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\apartment\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\apartment\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\house\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\house\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\house\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\house\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\office\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\office\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\office\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\property-type\office\page\3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\recent-commercial-real-estate-transactions\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\recent-commercial-real-estate-transactions\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\renovating-a-living-room-experts-share-their-secrets\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\renovating-a-living-room-experts-share-their-secrets\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\sample-page\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\slider-search-form\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\social-share-buttons\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-austin-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-austin-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-austin-street-2\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-austin-street-2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-englewood-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-englewood-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-englewood-street-2\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-englewood-street-2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-wicker-park-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-wicker-park-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-wicker-park-street-2\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ch-wicker-park-street-2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-downtown-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-downtown-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-skid-row-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-skid-row-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-skid-row-street-2\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-skid-row-street-2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-venice-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-venice-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-venice-street-2\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\la-venice-street-2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-chinatown-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-chinatown-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-chinatown-street-2\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-chinatown-street-2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-chinatown-street-3\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-chinatown-street-3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-soho-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-soho-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-soho-street-2\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-soho-street-2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-soho-street-3\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-soho-street-3\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-upper-east-side-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-upper-east-side-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-upper-east-side-street-2\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\ny-upper-east-side-street-2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\se-capitol-hill-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\se-capitol-hill-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\se-fremont-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\se-fremont-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\se-lake-city-street-1\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\street\se-lake-city-street-1\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\architecture\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\architecture\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\architecture\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\design\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\design\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\design\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\house\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\house\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\tag\house\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\the-interior-design-trends\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\the-interior-design-trends\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\the-most-inspiring-interior-design-of-2016\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\the-most-inspiring-interior-design-of-2016\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\typography\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\video-property-listing\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\video-search-form\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\03992.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\04e39.css" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\0a976.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\1117c.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\136e9.css" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\4a978.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\5608e.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\6721b.css" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\741fe.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\84ed0.css" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\99826.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\acc78.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\b51b1.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\d9e93.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\e6ddf.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\f9bb6.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\cache\minify\fada9.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\contact-form-7\assets\ajax-loader.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\assets\fonts\essb.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\assets\js\essb-core.min.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\lib\modules\social-followers-counter\assets\font\essb-socialfollowers.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v157a1.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_icons_v2\fonts\vcpb-plugin-iconsb82a.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\flickr.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\address-book.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\alarm-clock.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\anchor.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\application-image.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\arrow.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\asterisk.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\auction-hammer.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\balloon-buzz.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\balloon-facebook.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\balloon-twitter.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\balloon.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\battery-full.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\binocular.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\blue-document-excel.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\blue-document-image.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\blue-document-music.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\blue-document-office.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\blue-document-pdf.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\blue-document-powerpoint.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\blue-document-word.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\bookmark.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\camcorder.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\camera.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\chart-pie.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\chart.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\clock.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\control.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\fire.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\heart.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\mail.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\plus-shield.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\icons\video.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\spinner.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\toggle_close.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\images\toggle_open.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\vc\alert.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\vc\blur.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\vc\exclamation.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\vc\info.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\vc\remove.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\vc\tick.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\assets\coloredbg.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\assets\gridtile.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\assets\gridtile_3x3.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\assets\gridtile_3x3_white.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\assets\gridtile_white.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\assets\loader.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\css\closedhand.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\css\openhand.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons90c6.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\star.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\amex.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\diners.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\discover.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\jcb.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\laser.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\maestro.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\mastercard.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\visa.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\images\icons\loader.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\.assets\fonts\Flaticon.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\Flaticon.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\images\close-small.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\images\close.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\images\gradient-dark.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\images\tick2696.svg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\images\twitter.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Adam-Jarod-200x200.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Adam-Jarod-400x400.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\audiojungle.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\bright-and-sunny-flat-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\bright-and-sunny-flat.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\bright-apartment-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\bright-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\centrally-located-apartment-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\centrally-located-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\charmin-countryside-estate-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\charmin-countryside-estate.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\codecanyon.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\colonial-style-villa-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\colonial-style-villa.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Daniella-Suzanne-200x200.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Daniella-Suzanne-400x400.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Daniella-Suzanne.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\elegant-studio-flat-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\elegant-studio-flat.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Erle-Orval-200x200.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Erle-Orval-400x400.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\flat-in-the-tenement-house-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\flat-in-the-tenement-house.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\graphicriver.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\house-in-a-quiet-neighborhood-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\house-in-a-quiet-neighborhood.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\minimalist-and-bright-flat-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\minimalist-and-bright-flat.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\modern-and-quirky-house-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\modern-and-quirky-house.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\modern-and-sunny-apartment-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\modern-and-sunny-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\modern-apartment-in-the-city-center-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\modern-apartment-in-the-city-center.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\modern-house-with-the-great-view-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\modern-house-with-the-great-view.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Peter-Hendricks-200x200.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Peter-Hendricks-400x400.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Peter-Hendricks.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\photodune.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\place-perfect-for-nature-lovers-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\place-perfect-for-nature-lovers.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\scandinavian-style-apartment-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\scandinavian-style-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\seattle.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\simple-small-apartment-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\simple-small-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\summer-house-with-a-pole-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\summer-house-with-a-pole.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\sunny-and-cozy-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\themeforest.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\travels-inspired-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Truman-Kennith-200x200.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\Truman-Kennith-400x400.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\two-storey-modern-flat-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\two-storey-modern-flat.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\warm-and-modern-studio-apartment-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\01\warm-and-modern-studio-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\affordable-office-space-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\affordable-office-space.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\beautiful-co-working-space-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\beautiful-co-working-space.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\beautiful-executive-suites-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\beautiful-executive-suites.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\building-plan.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\cambridge-building-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\cambridge-building.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\class-a-office-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\class-a-office.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\floor-plan.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\full-floor-office-condo-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\full-floor-office-condo.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\furnished-co-working-space-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\furnished-co-working-space.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\great-small-office-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\great-small-office.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\great-start-up-space-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\great-start-up-space.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\huge-office-space-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\huge-office-space.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\impressive-executive-suites-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\impressive-executive-suites.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\international-towers-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\international-towers.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\luxury-office-space-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\luxury-office-space.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\medical-office-condo-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\medical-office-condo.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\new-small-office-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\new-small-office.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\office-property-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\office-property.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\prestigious-office-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\prestigious-office.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\superior-office-space-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\superior-office-space.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\tastefully-decorarated-spacious-office-848x530.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\tastefully-decorarated-spacious-office.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\02\videoposter.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\03\logo-40-white.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\03\logo-50-white.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\10\logo-agent-40.png" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\agency-avatar-200x200.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\agency-avatar-400x400.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\agent-video-new-img.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\city-dark513b.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\condo-darkdae5.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\condo-light33ed.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\houses-on-the-mountain-img.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\inside-whiter69db.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\inside.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2018\07\multiple-homes-dark38ed.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-includes\wlwmanifest.xml" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\xmlrpc.php" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\xmlrpc0db0.php" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\10002\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\10002\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\10002\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\10005\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\10005\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\10005\page\2\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\60007\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\60007\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\60106\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\60106\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\90001\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\90001\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\90005\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\90005\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\98101\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\98101\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\98103\feed\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\zip-code\98103\index.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\default\wp-content\uploads\2017\01\modern-and-sunny-apartment.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\default\wp-content\uploads\2017\01\stylish-countryside-estate.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\default\wp-content\uploads\2017\10\woman-window.jpg" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\rs.sinajs.cn\rc891.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\rs.sinajs.cn\tmpf0c1.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\s1.sinaedge.com\whba18a.gif" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\service.weibo.com\share\index=0&amp;src=https_\myhometheme.net\agent\wp-content\uploads\2017\02\beautiful-executive-suites.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\service.weibo.com\share\share40c5.html" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\static.cloudflareinsights.com\beacon.min.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\tjs.sjs.sinajs.cn\open\analytics\js\suda.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\tjs.sjs.sinajs.cn\t5\register\js\page\remote\loginLayer4478.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\www.google.com\recaptcha\api68b3.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\www.googletagmanager.com\gtm5445.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\hts-cache\doit.log" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\hts-cache\new.zip" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\hts-cache\winprofile.ini" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\assets\fonts\essb.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\assets\fonts\essb.ttf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\assets\fonts\essb.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\assets\fonts\essbd41d.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\lib\modules\social-followers-counter\assets\font\essb-socialfollowers.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\lib\modules\social-followers-counter\assets\font\essb-socialfollowers.ttf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\easy-social-share-buttons3\lib\modules\social-followers-counter\assets\font\essb-socialfollowers.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v157a1.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v157a1.ttf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v157a1.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_grid\vc_grid_v1d41d.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_icons_v2\fonts\vcpb-plugin-iconsb82a.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_icons_v2\fonts\vcpb-plugin-iconsb82a.ttf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\js_composer\assets\fonts\vc_icons_v2\fonts\vcpb-plugin-iconsb82a.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons90c6.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons90c6.ttf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons90c6.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\star.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\star.ttf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\star.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\stard41d.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.ttf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\plugins\woocommerce\assets\fonts\WooCommerced41d.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\Flaticon.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\Flaticon.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\Flaticond41d.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\themes\myhome\assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\10\DOCX-Document.doc" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-content\uploads\2017\10\PDF-Document.pdf" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed009a.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed00a1.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed0251" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed045b.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed0d36" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed0d70" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed1138" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed12e5.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed131e.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed13ff" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed155f.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed16ac" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed1df9" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed2393.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed25ac.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed2716.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed286a" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed2930" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed2951.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed2f53" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed3c50.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed3db1" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed3e0d.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed3f3c.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed3f74" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed3fde" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed43c5.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed4463.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed4669" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed47ed" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed4954" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed49da" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed4a69" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed4b75" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed4f2a.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed4fb5.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed51ac" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed52ed.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed53c7" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed53e2.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed575c" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed59f2" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed5b14" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed5d59.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed5d5d" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed5d89.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed5f4e.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed6151.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed61aa.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed6319.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed6400" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed64c8" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed65d2.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed65f3.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed6a1f.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed6e41" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed6ec6" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed6fb4" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed738f" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed77bf.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed79f1.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed8159" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed83fb" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed8503" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed850f" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed8827" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed8910.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed8e7c.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed8eaa" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed9083.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed9085.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed91bf.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed9300" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed93b0" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed952e" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed9957.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed9c0f" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embed9fd9" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embeda26c.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embeda45d" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embeda4fc" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embeda55c" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embeda5a7.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embeda785.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedab8a.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedabbb.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedac2c.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedb22c" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedba48.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedbe91.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc02d" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc172.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc359.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc42e" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc595.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc693" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc697" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc6ca" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc79e" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc86e.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedc884" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedca1e.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedce10" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedceaa" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedd17a" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedd23f.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedd316" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedd93c.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embeddbbe.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embede06e.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embede224.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embede3cd.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embede5d4" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embede696" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embede700" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedea5e" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf0be.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf0ec" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf40a.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf44b.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf4df.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf583" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf772.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf86c.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedf9b2.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\oembed\1.0\embedfb93.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\categories\60.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\102.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\113.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\115.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\118.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\119.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\120.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\121.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\122.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\123.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\124.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\125.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\126.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\128.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\129.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\575.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\578.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\72.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\805.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\812.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\814.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\815.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\816.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\817.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\818.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\92.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\estate\94.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1365.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\139.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1674.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1719.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1836.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1866.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1870.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1944.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1957.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\1961.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\2199.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\230.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\2323.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\2450.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\2455.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\2551.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\2560.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\2732.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\3141.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\355.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\404.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\439.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\5.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\588.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\pages\924.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\203.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\207.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\209.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\211.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\213.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\215.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\218.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\220.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\223.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\225.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\825.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\posts\827.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\tags\61.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\tags\62.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\tags\63.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\users\11.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\users\2.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\users\3.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\users\4.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\users\5.json" />
+    <Content Include="Content\Tema\Osmaniye Gayrimenkul\myhometheme.net\agent\wp-json\wp\v2\users\6.json" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_NewLayout.cshtml" />
+    <Content Include="Views\Shared\_FooterLayout.cshtml" />
+    <Content Include="Views\Shared\_HeaderLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55986</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44331/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

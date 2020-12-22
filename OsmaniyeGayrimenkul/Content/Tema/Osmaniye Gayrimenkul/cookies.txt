@@ -1,0 +1,13 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.cloudflare.com	TRUE	/	FALSE	1999999999	__cfduid	da649efbca921ca47af2fd1eb602dc9f71608545979
+ajax.cloudflare.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+.cloudflareinsights.com	TRUE	/	FALSE	1999999999	__cfduid	dd4da3a1c33eb30b14c914631d083feb11608546042
+static.cloudflareinsights.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+.facebook.com	TRUE	/	FALSE	1999999999	datr	JXfgX4DWTVHteILQajOscL-5
+service.weibo.com	TRUE	/	FALSE	1999999999	TC-Widget-G0	4a4609df0e4ef6187a7b4717d4e6cf12
+.sina.com.cn	TRUE	/	FALSE	1999999999	U_TRS1	0000002a.25cb3afc.5fe077e3.379121f2
+.sina.com.cn	TRUE	/	FALSE	1999999999	U_TRS2	0000002a.25dc3afc.5fe077e3.c9cbcbf1
+.myhometheme.net	TRUE	/	FALSE	1999999999	__cfduid	d18d58c26dfb1850547ae2e48d719b55f1608546427
+myhometheme.net	TRUE	/	FALSE	1999999999	SameSite	Lax
+
